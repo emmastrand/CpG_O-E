@@ -31,7 +31,7 @@ Fitting mixture model with mixtools normalmixEM
 Mdata <- Mcap$V2
 Mcap_data <- Mdata[Mdata >= 0.001 & Mdata <= 1.5] #Cutting off high and low values
 set.seed(1)
-Mcap_mixmdl <- normalmixEM(Mcap_data, k = 2)
+Mcap_mixmdl <- normalmixEM(Mcap_data, k=2)
 plot(Mcap_mixmdl, which = 2, col2 = c("red", "blue"), xlab2 = " ", main2 = "Montipora capitata", font.main = 3)
 lines(density(Mcap_data), lty=2, lwd=2)
 ```
